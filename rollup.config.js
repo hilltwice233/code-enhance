@@ -16,7 +16,7 @@ const plugins = [
 export default defineConfig([
   {
     plugins,
-    external: ["vscode", "node:fs"],
+    external: ["vscode"],
     input: "./source/extension.ts",
     output: {file: "./extension/extension.js", format: "commonjs"},
   },
