@@ -49,20 +49,55 @@ function resolveManifestCJK(raw: Object) {
     },
     {
       label: "Enhanced Light (CJK)",
-      id: "code-enhance.light.cjk",
+      id: "code-enhance.light.zh",
       uiTheme: "vs",
       path: "light-cjk.json",
     },
   ]
 }
 
-export function removeJsonComments(raw: string): string {
-  return raw.replaceAll("", "")
+/**
+ * Compile a color theme json file into the output extension folder.
+ * @param source file to parse from.
+ * @param dist file as output.
+ * @param zh whether to use CJK mode.
+ */
+export function compileThemeJson(source: string, dist: string, zh: boolean) {
+  const json = JSON.parse(removeJsonComments(readFileSync(source).toString()))
+  if (zh) {
+    const tokenColors = json["tokenColors"] as Object[]
+    for (const item of tokenColors) {
+      if (item["scope"].indexOf("zh-mark") !== -1) {
+        const font = item["settings"]["fontStyle"] as string
+        item["settings"]["fontStyle"] = font.replace("italic", "").trim()
+      }
+    }
+  }
+  writeFileSync(dist, JSON.stringify(json))
+}
+
+function removeJsonComments(raw: string): string {
+  return raw.replaceAll(/(\/\/.*\n)|(\/\*(.|[\r\n])*\*\/)/g, "")
 }
 
 if (import.meta.vitest) {
   const {it, expect} = import.meta.vitest
   it("remove json comments", () => {
-    expect(removeJsonComments("")).toBe("")
+    const raw = `{
+      // inline comment
+      "name": "hilltwice",
+      /* inline block comment */
+      /*
+       * multi-line comment
+       */
+      "age": 22,
+      "has-y-chromosome": true
+    }`
+    const resolved = removeJsonComments(raw)
+    console.log(resolved)
+    const person = JSON.parse(resolved)
+    expect(person["name"]).toBe("hilltwice")
+    expect(person["age"]).toBe(22)
+    expect(person["has-y-chromosome"]).toBe(true)
   })
 }

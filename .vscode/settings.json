@@ -9,6 +9,12 @@
     "*.ts": "${capture}.js"
   },
 
+  /*
+  comment doc
+  */
+
+  /* block docs*/
+
   // Prettier default formatter.
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {"source.organizeImports": true},
@@ -16,5 +22,5 @@
 
   // Spell checker.
   "cSpell.enableFiletypes": ["*"],
-  "cSpell.words": ["codeorama", "enummember", "vitest"]
+  "cSpell.words": ["enummember", "hilltwice", "vitest"]
 }
