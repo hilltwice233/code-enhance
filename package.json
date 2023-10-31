@@ -5,7 +5,11 @@
   "type": "module",
   "private": true,
   "engines": {
-    "vscode": "^1.82.0"
+    "vscode": "^1.83.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/hilltwice233/code-enhance"
   },
   "main": "extension.js",
   "contributes": {

@@ -83,3 +83,8 @@ and improve the coding experience.
 
 > <div style="opacity:25%;">encoding: utf8, direction: ltr</div>
 > <div class="outline">横平竖直</div>
+
+## License: MIT
+
+This project is licensed under the [MIT License](./license.txt).
+It's just a tool. Feel free to use.

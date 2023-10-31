@@ -25,3 +25,4 @@ compileThemeJson(join(theme, lightSrc), join(out, lightCJK), true)
 
 copyFileSync(join(root, "source", "extension.js"), join(out, "extension.js"))
 copyFileSync(join(root, "readme.md"), join(out, "readme.md"))
+copyFileSync(join(root, "license.txt"), join(out, "license.txt"))

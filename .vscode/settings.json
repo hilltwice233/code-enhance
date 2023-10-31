@@ -22,5 +22,5 @@
 
   // Spell checker.
   "cSpell.enableFiletypes": ["*"],
-  "cSpell.words": ["enummember", "hilltwice", "vitest"]
+  "cSpell.words": ["enummember", "hilltwice", "vitest", "vsix"]
 }

@@ -11,3 +11,5 @@ yarn.lock
 extension/
 scripts/**/*.js
 source/**/*.js
+*.vsix
+*.zip
