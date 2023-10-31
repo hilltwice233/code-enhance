@@ -1,3 +1,3 @@
 # Code Orama
 
-A vscode color theme that make coding more comfortable.
+A vscode toolkit that make coding more comfortable.
