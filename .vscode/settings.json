@@ -5,5 +5,9 @@
   // Prettier default formatter.
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {"source.organizeImports": true},
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Spell checker.
+  "cSpell.enableFiletypes": ["*"],
+  "cSpell.words": ["codeorama"]
 }
