@@ -2,11 +2,12 @@
   "name": "codeorama",
   "description": "A vscode toolkit that make coding more comfortable.",
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "private": true,
   "engines": {
     "vscode": "^1.82.0"
   },
+  "main": "./source/extension.js",
   "contributes": {
     "themes": [
       {
@@ -21,12 +22,20 @@
         "uiTheme": "vs",
         "path": "./themes/light-color-theme.json"
       }
+    ],
+    "commands": [
+      {
+        "command": "hello.world",
+        "title": "Hello World"
+      }
     ]
   },
   "scripts": {
     "prettier": "prettier . -w"
   },
   "devDependencies": {
+    "@types/node": "^20.8.9",
+    "@types/vscode": "^1.83.1",
     "@vscode/vsce": "^2.22.0",
     "prettier": "^3.0.3"
   }
