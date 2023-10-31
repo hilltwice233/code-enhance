@@ -27,7 +27,10 @@
     "titleBar.border": "#2f3133"
   },
   "semanticHighlighting": true,
-  "semanticTokenColors": {},
+  "semanticTokenColors": {
+    "method": {"fontStyle": "italic"},
+    "variable.defaultLibrary": {"foreground": "#bd93d5", "fontStyle": "bold"}
+  },
   "tokenColors": [
     {
       "scope": ["source.ignore"],
@@ -94,14 +97,21 @@
     {
       "scope": ["variable"],
       "settings": {
-        "foreground": "#d4d2c6",
+        "foreground": "#c2c0b3",
         "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["variable.parameter"],
+      "settings": {
+        "foreground": "#c2c0b3",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": ["variable.other.property"],
       "settings": {
-        "foreground": "#d4d2c6",
+        "foreground": "#c2c0b3",
         "fontStyle": "italic"
       }
     },
@@ -145,8 +155,15 @@
     {
       "scope": ["variable.other.enummember"],
       "settings": {
-        "foreground": "#b879dc",
+        "foreground": "#bd93d5",
         "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["entity.name.type.module"],
+      "settings": {
+        "foreground": "#bd93d5",
+        "fontStyle": "italic bold"
       }
     }
   ]
