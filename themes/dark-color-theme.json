@@ -1,5 +1,31 @@
 {
-  "colors": {},
+  "colors": {
+    "activityBar.background": "#181717",
+    "activityBar.activeBorder": "#359edb",
+    "activityBar.border": "#2f3133",
+
+    "commandCenter.background": "#181717",
+    "commandCenter.border": "#2f3133",
+
+    "editor.background": "#212020",
+    "editor.foreground": "#aca9a5",
+
+    "sideBar.background": "#181717",
+    "sideBar.border": "#2f3133",
+
+    "statusBar.background": "#181717",
+    "statusBar.border": "#2f3133",
+    "statusBarItem.remoteBackground": "#167cb7",
+
+    "tab.activeBorderTop": "#359edb",
+    "tab.activeBackground": "#212020",
+    "tab.inactiveBackground": "#181717",
+    "tab.border": "#2f3133",
+
+    "titleBar.activeBackground": "#181717",
+    "titleBar.inactiveBackground": "#232121",
+    "titleBar.border": "#2f3133"
+  },
   "semanticHighlighting": true,
   "semanticTokenColors": {},
   "tokenColors": [
