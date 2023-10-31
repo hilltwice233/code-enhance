@@ -35,6 +35,7 @@
     ]
   },
   "scripts": {
+    "package": "npm run build && cd extension && vsce package && cd ..",
     "prettier": "prettier . -w",
     "build": "npm run rollup && node scripts/build.js",
     "rollup": "rollup --config rollup.config.js",
