@@ -3,5 +3,8 @@
   "description": "A vscode color theme that make coding more comfortable.",
   "version": "0.0.0",
   "type": "module",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
 }

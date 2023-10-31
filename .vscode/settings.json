@@ -1,4 +1,9 @@
 {
   "files.encoding": "utf8",
-  "files.eol": "\n"
+  "files.eol": "\n",
+
+  // Prettier default formatter.
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {"source.organizeImports": true},
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
