@@ -10,7 +10,7 @@ const plugins = [
   commonjs(),
   nodeResolve(),
   replace({"import.meta.vitest": "undefined", preventAssignment: true}),
-  terser({mangle: false, compress: false}),
+  terser({mangle: true, compress: true}),
 ]
 
 export default defineConfig([
