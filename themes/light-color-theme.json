@@ -2,5 +2,20 @@
   "colors": {},
   "semanticHighlighting": true,
   "semanticTokenColors": {},
-  "tokenColors": []
+  "tokenColors": [
+    {
+      "scope": ["source.ignore"],
+      "settings": {
+        "foreground": "#414243",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["comment", "zh-mark"],
+      "settings": {
+        "foreground": "#adafb0",
+        "fontStyle": "italic"
+      }
+    }
+  ]
 }
