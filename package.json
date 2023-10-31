@@ -7,31 +7,32 @@
   "engines": {
     "vscode": "^1.82.0"
   },
-  "main": "./source/extension.js",
+  "main": "extension.js",
   "contributes": {
     "themes": [
       {
         "label": "Enhanced Dark Source",
         "id": "code-enhance.dark.source",
         "uiTheme": "vs-dark",
-        "path": "./themes/dark-color-theme.json"
+        "path": "themes/dark-color-theme.json"
       },
       {
         "label": "Code Orama Light Source",
         "id": "code-enhance.light.source",
         "uiTheme": "vs",
-        "path": "./themes/light-color-theme.json"
+        "path": "themes/light-color-theme.json"
       }
     ],
     "commands": [
       {
         "command": "hello.world",
-        "title": "Hello World"
+        "title": "Hello World!"
       }
     ]
   },
   "scripts": {
     "prettier": "prettier . -w",
+    "build": "npm run rollup && node scripts/build.js",
     "rollup": "rollup --config rollup.config.js",
     "test": "vitest run"
   },

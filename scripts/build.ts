@@ -1,3 +1,8 @@
-import {removeJsonComments} from "./tools.js"
+import {join} from "node:path"
+import {cwd} from "node:process"
+import {compileManifest} from "./tools.js"
 
-console.log(removeJsonComments(""))
+const root = cwd()
+const out = join(root, "extension")
+
+compileManifest(root, out)

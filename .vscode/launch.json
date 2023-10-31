@@ -2,10 +2,16 @@
   "configurations": [
     {
       "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
-      "name": "Source development",
+      "name": "Color theme source",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}/extension"],
+      "name": "Extension preview",
       "request": "launch",
       "type": "extensionHost",
-      "preLaunchTask": "npm:rollup"
+      "preLaunchTask": "npm:build"
     }
   ]
 }

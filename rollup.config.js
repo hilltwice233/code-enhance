@@ -10,13 +10,13 @@ const plugins = [
   commonjs(),
   nodeResolve(),
   replace({"import.meta.vitest": "undefined", preventAssignment: true}),
-  terser({mangle: true, compress: true}),
+  terser({mangle: false, compress: false}),
 ]
 
 export default defineConfig([
   {
     plugins,
-    external: ["vscode"],
+    external: ["vscode", "node:fs"],
     input: "./source/extension.ts",
     output: {file: "./extension/extension.js", format: "commonjs"},
   },

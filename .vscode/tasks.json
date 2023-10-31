@@ -6,6 +6,12 @@
       "script": "rollup",
       "label": "npm:rollup",
       "detail": "rollup --config rollup.config.js"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "label": "npm:build",
+      "detail": "npm run rollup && node scripts/build.js"
     }
   ]
 }
