@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitOverride": true
+  },
+  "include": ["source/**/*.ts", "scripts/**/*.ts"]
+}
