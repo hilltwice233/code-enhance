@@ -17,7 +17,7 @@
         "path": "themes/dark-color-theme.json"
       },
       {
-        "label": "Code Orama Light Source",
+        "label": "Enhanced Light Source",
         "id": "code-enhance.light.source",
         "uiTheme": "vs",
         "path": "themes/light-color-theme.json"

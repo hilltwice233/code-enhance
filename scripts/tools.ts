@@ -16,7 +16,44 @@ export function compileManifest(source: string, dist: string) {
   json.scripts = undefined
   json.devDependencies = undefined
   json.type = "commonjs"
+  resolveManifestCJK(json)
   writeFileSync(join(dist, manifest), JSON.stringify(json))
+}
+
+/**
+ * It will only work in current situation.
+ * It will directly change the {@link raw} object,
+ * because the parameter here is exactly a pointer.
+ *
+ * @param raw the raw json object of the manifest.
+ */
+function resolveManifestCJK(raw: Object) {
+  raw["contributes"]["themes"] = [
+    {
+      label: "Enhanced Dark",
+      id: "code-enhance.dark",
+      uiTheme: "vs-dark",
+      path: "dark.json",
+    },
+    {
+      label: "Enhanced Dark (CJK)",
+      id: "code-enhance.dark.zh",
+      uiTheme: "vs-dark",
+      path: "dark-cjk.json",
+    },
+    {
+      label: "Enhanced Light",
+      id: "code-enhance.light",
+      uiTheme: "vs",
+      path: "light.json",
+    },
+    {
+      label: "Enhanced Light (CJK)",
+      id: "code-enhance.light.cjk",
+      uiTheme: "vs",
+      path: "light-cjk.json",
+    },
+  ]
 }
 
 export function removeJsonComments(raw: string): string {

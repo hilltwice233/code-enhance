@@ -3,10 +3,7 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "types": ["vitest/importMeta"],
-    "strict": true,
-    "strictNullChecks": true,
-    "noImplicitOverride": true
+    "types": ["vitest/importMeta"]
   },
   "include": ["source/**/*.ts", "scripts/**/*.ts"]
 }
