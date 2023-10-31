@@ -4,7 +4,8 @@
       "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
       "name": "Source development",
       "request": "launch",
-      "type": "extensionHost"
+      "type": "extensionHost",
+      "preLaunchTask": "npm:rollup"
     }
   ]
 }
