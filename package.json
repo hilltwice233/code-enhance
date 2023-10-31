@@ -1,5 +1,5 @@
 {
-  "name": "codeorama",
+  "name": "code-enhance",
   "description": "A vscode toolkit that make coding more comfortable.",
   "version": "0.0.0",
   "type": "module",
@@ -11,14 +11,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Code Orama Dark Source",
-        "id": "codeorama.dark.source",
+        "label": "Enhanced Dark Source",
+        "id": "code-enhance.dark.source",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-color-theme.json"
       },
       {
         "label": "Code Orama Light Source",
-        "id": "codeorama.light.source",
+        "id": "code-enhance.light.source",
         "uiTheme": "vs",
         "path": "./themes/light-color-theme.json"
       }
