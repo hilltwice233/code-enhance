@@ -42,6 +42,112 @@
         "foreground": "#646769",
         "fontStyle": "italic"
       }
+    },
+    {
+      "scope": ["meta.brace", "punctuation"],
+      "settings": {
+        "foreground": "#5c6063",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["storage.type"],
+      "settings": {
+        "foreground": "#d16d6d",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["keyword.control", "keyword.operator.new"],
+      "settings": {
+        "foreground": "#d16d6d",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["support.type", "entity.name.type"],
+      "settings": {
+        "foreground": "#e8a043",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["support.type.primitive"],
+      "settings": {
+        "foreground": "#e8a043",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.name.type.enum"],
+      "settings": {
+        "foreground": "#e8a043",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "entity.name.function",
+      "settings": {
+        "foreground": "#f7c42a"
+      }
+    },
+    {
+      "scope": ["variable"],
+      "settings": {
+        "foreground": "#d4d2c6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["variable.other.property"],
+      "settings": {
+        "foreground": "#d4d2c6",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["string"],
+      "settings": {
+        "foreground": "#7ba74a"
+      }
+    },
+    {
+      "scope": ["comment.block.documentation"],
+      "settings": {
+        "foreground": "#548759",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["keyword.operator"],
+      "settings": {
+        "foreground": "#6fcad8",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "storage.type.class.jsdoc",
+        "punctuation.definition.block.tag.jsdoc"
+      ],
+      "settings": {
+        "foreground": "#6fcad8",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#34ade6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["variable.other.enummember"],
+      "settings": {
+        "foreground": "#b879dc",
+        "fontStyle": ""
+      }
     }
   ]
 }

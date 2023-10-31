@@ -16,5 +16,5 @@
 
   // Spell checker.
   "cSpell.enableFiletypes": ["*"],
-  "cSpell.words": ["codeorama", "orama"]
+  "cSpell.words": ["codeorama", "enummember", "orama"]
 }
