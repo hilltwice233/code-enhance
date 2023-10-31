@@ -1,3 +1,7 @@
+# Platform specified files.
+.DS_Store
+
+# Node dependencies and lockfile.
 node_modules/
 package-lock.json
 pnpm-lock.yaml
