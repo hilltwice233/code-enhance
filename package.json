@@ -4,6 +4,25 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Code Orama Dark Source",
+        "id": "codeorama.dark.source",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-color-theme.json"
+      },
+      {
+        "label": "Code Orama Light Source",
+        "id": "codeorama.light.source",
+        "uiTheme": "vs",
+        "path": "./themes/light-color-theme.json"
+      }
+    ]
+  },
   "scripts": {
     "prettier": "prettier . -w"
   },
