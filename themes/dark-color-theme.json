@@ -129,7 +129,7 @@
       }
     },
     {
-      "scope": ["keyword.operator"],
+      "scope": ["keyword.operator", "constant.character.escape"],
       "settings": {
         "foreground": "#6fcad8",
         "fontStyle": ""
