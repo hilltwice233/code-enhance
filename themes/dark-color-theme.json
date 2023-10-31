@@ -82,7 +82,7 @@
       }
     },
     {
-      "scope": ["entity.name.type.enum"],
+      "scope": ["entity.name.type.enum", "constant.language.boolean"],
       "settings": {
         "foreground": "#e8a043",
         "fontStyle": "italic"
@@ -163,6 +163,7 @@
       "scope": [
         "entity.name.type.module",
         "support.type.property-name",
+        "entity.name.tag",
         "keyword.other.definition.ini"
       ],
       "settings": {

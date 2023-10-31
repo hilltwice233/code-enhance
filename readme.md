@@ -4,11 +4,14 @@ A vscode toolkit that make coding more comfortable.
 
 ## Supported Languages
 
-|  Language  | Dark | Light | VSCode Extension |
-| :--------: | :--: | :---: | :--------------: |
-|   Ignore   |  ✔️  |  ✔️   |     build-in     |
-| Properties |  ❌  |  ❌   |     build-in     |
-| TypeScript |  ✔️  |  ❌   |     build-in     |
+|  Language  | Dark | Light |   VSCode Extension   |
+| :--------: | :--: | :---: | :------------------: |
+|   Ignore   |  ✔️  |  ✔️   |       build-in       |
+| JavaScript |  ✔️  |  ❌   |       build-in       |
+|    Json    |  ✔️  |  ❌   |       build-in       |
+| Properties |  ✔️  |  ❌   |       build-in       |
+| TypeScript |  ✔️  |  ❌   |       build-in       |
+|    Yaml    |  ✔️  |  ❌   | `redhat.vscode-yaml` |
 
 ## Color Theme Design Philosophy
 
