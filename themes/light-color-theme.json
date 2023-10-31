@@ -1,5 +1,35 @@
 {
-  "colors": {},
+  "colors": {
+    "activityBar.activeBorder": "#3a80e1",
+    "activityBar.background": "#fefdfa",
+    "activityBar.border": "#e4e3e1",
+    "activityBar.foreground": "#383d43",
+    "activityBar.inactiveForeground": "#7d868f",
+
+    "commandCenter.background": "#ffffff",
+    "commandCenter.border": "#e4e3e1",
+
+    "editor.background": "#ffffff",
+    "editor.foreground": "#3e4449",
+
+    "sideBar.background": "#fefdfa",
+    "sideBar.border": "#e4e3e1",
+
+    "statusBar.background": "#fefdfa",
+    "statusBar.foreground": "#383d43",
+    "statusBar.border": "#e4e3e1",
+    "statusBarItem.remoteBackground": "#2663b8",
+    "statusBarItem.errorForeground": "#c83939",
+
+    "tab.activeBackground": "#ffffff",
+    "tab.inactiveBackground": "#fefdfa",
+    "tab.border": "#e4e3e1",
+    "tab.activeBorderTop": "#3a80e1",
+
+    "titleBar.activeBackground": "#fefdfa",
+    "titleBar.inactiveBackground": "#f5f4ef",
+    "titleBar.border": "#e4e3e1"
+  },
   "semanticHighlighting": true,
   "semanticTokenColors": {},
   "tokenColors": [
