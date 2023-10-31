@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+      "name": "Source development",
+      "request": "launch",
+      "type": "extensionHost"
+    }
+  ]
+}
