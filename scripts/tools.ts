@@ -1,4 +1,10 @@
-import {readFileSync, writeFileSync} from "node:fs"
+import {
+  readFileSync,
+  readdirSync,
+  rmSync,
+  statSync,
+  writeFileSync,
+} from "node:fs"
 import {join} from "node:path"
 
 /**
@@ -99,5 +105,16 @@ if (import.meta.vitest) {
     expect(person["name"]).toBe("hilltwice")
     expect(person["age"]).toBe(22)
     expect(person["has-y-chromosome"]).toBe(true)
+  })
+}
+
+/**
+ * Remove all items inside a folder.
+ * @param path absolute path is more recommended.
+ */
+export function rmdirRecursive(path: string) {
+  readdirSync(path).forEach((name) => {
+    const file = join(path, name)
+    statSync(file).isDirectory() ? rmdirRecursive(file) : rmSync(file)
   })
 }

@@ -10,3 +10,4 @@ yarn.lock
 # Compilation output files.
 extension/
 scripts/**/*.js
+source/**/*.js

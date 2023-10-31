@@ -18,7 +18,7 @@ export default defineConfig([
     plugins,
     external: ["vscode"],
     input: "./source/extension.ts",
-    output: {file: "./extension/extension.js", format: "commonjs"},
+    output: {file: "./source/extension.js", format: "commonjs"},
   },
   {
     plugins,
