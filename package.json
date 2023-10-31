@@ -1,0 +1,7 @@
+{
+  "name": "codeorama",
+  "description": "A vscode color theme that make coding more comfortable.",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true
+}
