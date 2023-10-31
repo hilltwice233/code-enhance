@@ -63,3 +63,21 @@ while object oriented programming aspects are more likely to be italic,
 and keywords and special aspects are more likely to be bold.
 
 ## CJK Comment Optimization
+
+There is a unique CJK mode color theme
+on each of the dark mode and the light mode.
+If you are using the CJK languages (Chinese, Japanese and Korean) for comments,
+Such mode will make the comment normal rather than italic,
+which will make characters in such languages more elegant,
+and improve the coding experience.
+
+<style>
+  div.outline {
+    text-align:center;
+    font-size: 2rem;
+    padding: 1rem 1rem 2.5rem 1rem;
+  }
+</style>
+
+> <div style="opacity:25%;">encoding: utf8, direction: ltr</div>
+> <div class="outline">横平竖直</div>
