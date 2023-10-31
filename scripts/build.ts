@@ -1,1 +1,3 @@
-console.log("it works")
+import {removeJsonComments} from "./tools.js"
+
+console.log(removeJsonComments(""))
