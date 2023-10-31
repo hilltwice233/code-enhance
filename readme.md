@@ -2,7 +2,9 @@
 
 A vscode toolkit that make coding more comfortable.
 
-## Supported Languages
+## Color Theme
+
+### Supported languages and file types
 
 |  Language  | Dark | Light |   VSCode Extension   |
 | :--------: | :--: | :---: | :------------------: |
@@ -13,7 +15,7 @@ A vscode toolkit that make coding more comfortable.
 | TypeScript |  ✔️  |  ❌   |       build-in       |
 |    Yaml    |  ✔️  |  ❌   | `redhat.vscode-yaml` |
 
-## Color Theme Design Philosophy
+### Color theme design philosophy
 
 As for the color,
 the dark theme is designed like chalk writing on blackboard,
@@ -62,7 +64,7 @@ functional programming aspects are in normal style,
 while object oriented programming aspects are more likely to be italic,
 and keywords and special aspects are more likely to be bold.
 
-## CJK Comment Optimization
+### CJK comment optimization
 
 There is a unique CJK mode color theme
 on each of the dark mode and the light mode.
