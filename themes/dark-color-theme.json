@@ -107,7 +107,11 @@
       }
     },
     {
-      "scope": ["entity.name.type.enum", "constant.language.boolean"],
+      "scope": [
+        "entity.name.type.enum",
+        "constant.language.boolean",
+        "constant.language.json"
+      ],
       "settings": {
         "foreground": "#e8a043",
         "fontStyle": "italic"
