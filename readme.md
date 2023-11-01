@@ -2,6 +2,10 @@
 
 A vscode toolkit that make coding more comfortable.
 
+## Git Tools
+
+1. Show git changes of each lines. (unstable)
+
 ## Color Theme
 
 ### Supported languages and file types
