@@ -29,8 +29,8 @@
     ],
     "commands": [
       {
-        "command": "hello.world",
-        "title": "Hello World!"
+        "command": "code-enhance.active",
+        "title": "Code Enhance: Active"
       }
     ]
   },

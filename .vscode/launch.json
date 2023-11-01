@@ -5,7 +5,8 @@
       "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
       "name": "Color theme source",
       "request": "launch",
-      "type": "extensionHost"
+      "type": "extensionHost",
+      "internalConsoleOptions": "openOnSessionStart"
     },
     {
       // This launch script is only for vscode script development.
@@ -13,7 +14,8 @@
       "name": "Extension preview",
       "request": "launch",
       "type": "extensionHost",
-      "preLaunchTask": "npm:build"
+      "preLaunchTask": "npm:build",
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
