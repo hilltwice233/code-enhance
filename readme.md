@@ -47,18 +47,18 @@ which is listed in the table below.
   div.dim {background-color: #5c6063;}
 </style>
 
-|                Color                 | Code Type                   |
-| :----------------------------------: | :-------------------------- |
-|    <div class="box red">Red</div>    | Language keywords           |
-| <div class="box orange">Orange</div> | Class / Type / Enum names   |
-| <div class="box yellow">Yellow</div> | Functions and methods       |
-|  <div class="box grass">Grass</div>  | Strings and config values   |
-|  <div class="box green">Green</div>  | Documentation comments      |
-|   <div class="box cyan">Cyan</div>   | Operator and annotations    |
-|   <div class="box blue">Blue</div>   | Numbers and markdown titles |
-| <div class="box purple">Purple</div> | Static / Enum values/ Keys  |
-|   <div class="box grey">Grey</div>   | Properties and variables    |
-|    <div class="box dim">Dim</div>    | Normal comments             |
+|                Color                 | Code Type                 |
+| :----------------------------------: | :------------------------ |
+|    <div class="box red">Red</div>    | Language keywords         |
+| <div class="box orange">Orange</div> | Class / Type / Enum names |
+| <div class="box yellow">Yellow</div> | Functions and methods     |
+|  <div class="box grass">Grass</div>  | Strings and config values |
+|  <div class="box green">Green</div>  | Documentation comments    |
+|   <div class="box cyan">Cyan</div>   | Operator and annotations  |
+|   <div class="box blue">Blue</div>   | Numbers and constants     |
+| <div class="box purple">Purple</div> | Namespace and enum values |
+|   <div class="box grey">Grey</div>   | Properties and variables  |
+|    <div class="box dim">Dim</div>    | Normal comments           |
 
 As for the font style,
 functional programming aspects are in normal style,

@@ -107,14 +107,17 @@
       }
     },
     {
-      "scope": [
-        "entity.name.type.enum",
-        "constant.language.boolean",
-        "constant.language.json"
-      ],
+      "scope": ["entity.name.type.enum"],
       "settings": {
         "foreground": "#e8a043",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": ["constant.language.boolean", "constant.language.json"],
+      "settings": {
+        "foreground": "#e8a043",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -189,15 +192,23 @@
       }
     },
     {
+      "scope": ["variable.other.constant"],
+      "settings": {
+        "foreground": "#94b6c6",
+        "fontStyle": ""
+      }
+    },
+    {
       "scope": [
         "constant.numeric",
         "punctuation.definition.list.begin.markdown"
       ],
       "settings": {
         "foreground": "#34ade6",
-        "fontStyle": ""
+        "fontStyle": "bold"
       }
     },
+
     {
       "scope": ["string.other.link.title", "zh-mark"],
       "settings": {
