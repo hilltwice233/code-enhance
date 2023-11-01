@@ -22,7 +22,7 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
       const path = relative(cwd, absolutePath.fsPath)
 
       const args = ["blame", "-p", path, `-L${lineNumber + 1},+1`]
-      const cmd = spawn("git", args, {cwd}).stdout.on("data", (data) => {
+      spawn("git", args, {cwd}).stdout.on("data", (data) => {
         const fields = parseGitBlameFields(data.toString())
         const message = formatMessage(fields)
         console.log(message)
