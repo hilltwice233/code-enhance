@@ -11,6 +11,7 @@ A vscode toolkit that make coding more comfortable.
 |   Ignore   |  ✔️  |  ✔️   |       build-in       |
 | JavaScript |  ✔️  |  ❌   |       build-in       |
 |    Json    |  ✔️  |  ❌   |       build-in       |
+|  Markdown  |  ✔️  |  ❌   |       build-in       |
 | Properties |  ✔️  |  ❌   |       build-in       |
 | TypeScript |  ✔️  |  ❌   |       build-in       |
 |    Yaml    |  ✔️  |  ❌   | `redhat.vscode-yaml` |

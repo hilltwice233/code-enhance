@@ -40,7 +40,25 @@
       }
     },
     {
+      "scope": ["text.html.markdown", "zh-mark"],
+      "settings": {
+        "foreground": "#aba9a5",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": ["comment", "zh-mark"],
+      "settings": {
+        "foreground": "#646769",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "fenced_code.block.language.markdown",
+        "markup.underline.link",
+        "markup.strikethrough"
+      ],
       "settings": {
         "foreground": "#646769",
         "fontStyle": "italic"
@@ -55,6 +73,13 @@
     },
     {
       "scope": ["storage.type"],
+      "settings": {
+        "foreground": "#d16d6d",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["markup.inline.raw.string"],
       "settings": {
         "foreground": "#d16d6d",
         "fontStyle": ""
@@ -89,9 +114,23 @@
       }
     },
     {
-      "scope": "entity.name.function",
+      "scope": ["markup.italic"],
+      "settings": {
+        "foreground": "#e8a043",
+        "fontStyle": "italic underline"
+      }
+    },
+    {
+      "scope": ["entity.name.function", "markup.bold"],
       "settings": {
         "foreground": "#f7c42a"
+      }
+    },
+    {
+      "scope": ["markup.bold"],
+      "settings": {
+        "foreground": "#f7c42a",
+        "fontStyle": "bold"
       }
     },
     {
@@ -116,7 +155,7 @@
       }
     },
     {
-      "scope": ["string"],
+      "scope": ["string", "markup.quote.markdown"],
       "settings": {
         "foreground": "#7ba74a"
       }
@@ -146,10 +185,20 @@
       }
     },
     {
-      "scope": ["constant.numeric"],
+      "scope": [
+        "constant.numeric",
+        "punctuation.definition.list.begin.markdown"
+      ],
       "settings": {
         "foreground": "#34ade6",
         "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["string.other.link.title", "zh-mark"],
+      "settings": {
+        "foreground": "#34ade6",
+        "fontStyle": "italic"
       }
     },
     {
@@ -157,6 +206,13 @@
       "settings": {
         "foreground": "#bd93d5",
         "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["markup.heading.markdown"],
+      "settings": {
+        "foreground": "#bd93d5",
+        "fontStyle": "bold"
       }
     },
     {
