@@ -2,6 +2,7 @@
   "files.encoding": "utf8",
   "files.eol": "\n",
 
+  // File nesting.
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -9,11 +10,8 @@
     "*.ts": "${capture}.js"
   },
 
-  /*
-  comment doc
-  */
-
-  /* block docs*/
+  // Specify file types.
+  "files.associations": {"pre-commit": "shellscript"},
 
   // Prettier default formatter.
   "editor.formatOnSave": true,

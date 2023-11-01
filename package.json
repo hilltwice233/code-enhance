@@ -35,6 +35,7 @@
     ]
   },
   "scripts": {
+    "prepare": "husky install",
     "package": "npm run build && cd extension && vsce package && cd ..",
     "prettier": "prettier . -w",
     "build": "npm run rollup && node scripts/build.js",
@@ -50,6 +51,7 @@
     "@types/node": "^20.8.9",
     "@types/vscode": "^1.83.1",
     "@vscode/vsce": "^2.22.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "rollup": "^4.1.5",
     "tslib": "^2.6.2",
