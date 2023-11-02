@@ -42,7 +42,7 @@
   "semanticTokenColors": {},
   "tokenColors": [
     {
-      "scope": ["source.ignore"],
+      "scope": ["source.ignore", "meta.structure.dictionary.value"],
       "settings": {
         "foreground": "#414243",
         "fontStyle": ""
@@ -63,15 +63,40 @@
       }
     },
     {
-      "scope": ["constant.character.escape"],
+      "scope": ["constant.character.escape", "keyword"],
       "settings": {
-        "foreground": "#a83333"
+        "foreground": "#a83333",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["storage.type.built-in"],
+      "settings": {
+        "foreground": "#a83333",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "keyword.control.directive.include",
+        "punctuation.definition.directive"
+      ],
+      "settings": {
+        "foreground": "#a83333",
+        "fontStyle": "italic bold"
       }
     },
     {
       "scope": ["constant.language"],
       "settings": {
         "foreground": "#a83333",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "string",
+      "settings": {
+        "foreground": "#83a45c",
         "fontStyle": "bold"
       }
     },
@@ -87,6 +112,13 @@
       "settings": {
         "foreground": "#0e71a6",
         "fontStyle": "italic bold"
+      }
+    },
+    {
+      "scope": ["entity.name.function"],
+      "settings": {
+        "foreground": "#0e71a6",
+        "fontStyle": ""
       }
     }
   ]
