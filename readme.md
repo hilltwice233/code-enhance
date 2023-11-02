@@ -2,6 +2,10 @@
 
 A vscode toolkit that make coding more comfortable.
 
+This extension is unstable yet,
+if you'd like to use it,
+please wait until the first release.
+
 ## Git Tools
 
 1. Show git changes of each lines. (unstable)
