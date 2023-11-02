@@ -18,7 +18,7 @@ A vscode toolkit that make coding more comfortable.
 |  Markdown  |  ✔️  |  ❌   |       build-in       |
 | Properties |  ✔️  |  ❌   |       build-in       |
 | TypeScript |  ✔️  |  ❌   |       build-in       |
-|    Yaml    |  ✔️  |  ❌   | `redhat.vscode-yaml` |
+|    Yaml    |  ✔️  |  ✔️   | `redhat.vscode-yaml` |
 
 ### Color theme design philosophy
 

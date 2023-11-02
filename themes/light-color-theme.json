@@ -76,7 +76,14 @@
       }
     },
     {
-      "scope": ["support.type.property-name"],
+      "scope": ["constant.numeric"],
+      "settings": {
+        "foreground": "#1596c4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["support.type.property-name", "entity.name.tag"],
       "settings": {
         "foreground": "#0e71a6",
         "fontStyle": "italic bold"
