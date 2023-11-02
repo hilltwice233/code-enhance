@@ -11,6 +11,11 @@
 
     "editor.background": "#ffffff",
     "editor.foreground": "#3e4449",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.lineHighlightBackground": "#fcfaf7",
+    "editor.wordHighlightBackground": "#eaf3e1",
+    "editorBracketMatch.border": "#00000000",
+    "editorBracketMatch.background": "#e3f0d6",
 
     "input.border": "#e4e3e1",
     "input.background": "#ffffff",
