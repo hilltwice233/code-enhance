@@ -43,7 +43,7 @@
   "semanticTokenColors": {},
   "tokenColors": [
     {
-      "scope": ["source.ignore", "meta.structure.dictionary.value"],
+      "scope": ["source.ignore", "meta.structure.dictionary.value", "variable"],
       "settings": {
         "foreground": "#414243",
         "fontStyle": ""
@@ -64,14 +64,22 @@
       }
     },
     {
-      "scope": ["constant.character.escape", "keyword"],
+      "scope": [
+        "constant.character.escape",
+        "keyword",
+        "storage.type.function"
+      ],
       "settings": {
         "foreground": "#a83333",
         "fontStyle": ""
       }
     },
     {
-      "scope": ["storage.type.built-in"],
+      "scope": [
+        "storage.type.built-in",
+        "variable.parameter.positional.shell",
+        "variable.language.special"
+      ],
       "settings": {
         "foreground": "#a83333",
         "fontStyle": "bold"

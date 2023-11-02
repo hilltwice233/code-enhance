@@ -10,15 +10,16 @@ A vscode toolkit that make coding more comfortable.
 
 ### Supported languages and file types
 
-|  Language  | Dark | Light |   VSCode Extension   |
-| :--------: | :--: | :---: | :------------------: |
-|   Ignore   |  ✔️  |  ✔️   |       build-in       |
-| JavaScript |  ✔️  |  ❌   |       build-in       |
-|    Json    |  ✔️  |  ✔️   |       build-in       |
-|  Markdown  |  ✔️  |  ❌   |       build-in       |
-| Properties |  ✔️  |  ❌   |       build-in       |
-| TypeScript |  ✔️  |  ❌   |       build-in       |
-|    Yaml    |  ✔️  |  ✔️   | `redhat.vscode-yaml` |
+|  Language   | Dark | Light |        VSCode Extension         |
+| :---------: | :--: | :---: | :-----------------------------: |
+|   Ignore    |  ✔️  |  ✔️   |            build-in             |
+| JavaScript  |  ✔️  |  ❌   |            build-in             |
+|    Json     |  ✔️  |  ✔️   |            build-in             |
+|  Markdown   |  ✔️  |  ❌   |            build-in             |
+| Properties  |  ✔️  |  ❌   |            build-in             |
+| ShellScript |  ❌  |  ✔️   | `mads-hartmann.bash-ide-vscode` |
+| TypeScript  |  ✔️  |  ❌   |            build-in             |
+|    Yaml     |  ✔️  |  ✔️   |      `redhat.vscode-yaml`       |
 
 ### Color theme design philosophy
 
