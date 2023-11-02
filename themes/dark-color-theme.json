@@ -192,8 +192,7 @@
     {
       "scope": [
         "storage.type.class.jsdoc",
-        "punctuation.definition.block.tag.jsdoc",
-        "entity.name.function.preprocessor"
+        "punctuation.definition.block.tag.jsdoc"
       ],
       "settings": {
         "foreground": "#6fcad8",
@@ -233,7 +232,7 @@
       }
     },
     {
-      "scope": ["markup.heading.markdown"],
+      "scope": ["markup.heading.markdown", "entity.name.function.preprocessor"],
       "settings": {
         "foreground": "#bd93d5",
         "fontStyle": "bold"
