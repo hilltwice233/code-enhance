@@ -6,7 +6,7 @@ This extension is unstable yet,
 and had not been published into the vscode extension marketplace.
 
 If you'd like to use it regardless of potential exceptions,
-please [compile it](#how-to-build) or download the release package
+please [build it](#how-to-build) or download the release package
 and install via `vsix` on your local device.
 
 ## Git Tools
