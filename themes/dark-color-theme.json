@@ -65,7 +65,11 @@
       }
     },
     {
-      "scope": ["meta.brace", "punctuation"],
+      "scope": [
+        "meta.brace",
+        "punctuation",
+        "storage.modifier.array.bracket.square"
+      ],
       "settings": {
         "foreground": "#5c6063",
         "fontStyle": ""
@@ -89,7 +93,8 @@
       "scope": [
         "keyword.control",
         "keyword.operator.new",
-        "keyword.other.using"
+        "keyword.other.using",
+        "storage.modifier"
       ],
       "settings": {
         "foreground": "#d16d6d",
