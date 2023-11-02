@@ -15,6 +15,9 @@
     "editorBracketMatch.border": "#00000000",
     "editorBracketMatch.background": "#c4c0c0",
 
+    "editorLineNumber.foreground": "#6b6965",
+    "editorLineNumber.activeForeground": "#55b6ed",
+
     "panel.background": "#181717",
     "panel.border": "#2f3133",
     "panelTitle.activeBorder": "#359edb",
