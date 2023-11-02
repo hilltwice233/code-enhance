@@ -41,6 +41,12 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "method": {"fontStyle": "italic"},
+    "comment.documentation": {"foreground": "#548759"},
+    "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
+    "annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
+    "property.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
+    "property.static": {"foreground": "#bd93d5", "fontStyle": ""},
+    "enumMember": {"foreground": "#bd93d5", "fontStyle": "italic"},
     "variable.defaultLibrary": {"foreground": "#bd93d5", "fontStyle": "bold"}
   },
   "tokenColors": [
@@ -80,7 +86,8 @@
       "scope": [
         "meta.brace",
         "punctuation",
-        "storage.modifier.array.bracket.square"
+        "storage.modifier.array.bracket.square",
+        "source.dart"
       ],
       "settings": {
         "foreground": "#5c6063",

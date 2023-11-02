@@ -20,6 +20,7 @@ and install via `vsix` on your local device.
 |  Language   | Dark | Light |        VSCode Extension         |
 | :---------: | :--: | :---: | :-----------------------------: |
 |    C/C++    |  ✔️  |  ✔️   |      `ms-vscode.cpptools`       |
+|    Dart     |  ✔️  |  ❌   |      `Dart-Code.dart-code`      |
 |   Ignore    |  ✔️  |  ✔️   |            build-in             |
 | JavaScript  |  ✔️  |  ❌   |            build-in             |
 |    Json     |  ✔️  |  ✔️   |            build-in             |
