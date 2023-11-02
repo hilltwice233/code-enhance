@@ -20,5 +20,5 @@
 
   // Spell checker.
   "cSpell.enableFiletypes": ["*"],
-  "cSpell.words": ["enummember", "hilltwice", "vitest", "vsix"]
+  "cSpell.words": ["cpptools", "enummember", "hilltwice", "vitest", "vsix"]
 }

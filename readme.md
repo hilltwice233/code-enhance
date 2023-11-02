@@ -16,6 +16,7 @@ please wait until the first release.
 
 |  Language   | Dark | Light |        VSCode Extension         |
 | :---------: | :--: | :---: | :-----------------------------: |
+|    C/C++    |  ✔️  |  ✔️   |      `ms-vscode.cpptools`       |
 |   Ignore    |  ✔️  |  ✔️   |            build-in             |
 | JavaScript  |  ✔️  |  ❌   |            build-in             |
 |    Json     |  ✔️  |  ✔️   |            build-in             |

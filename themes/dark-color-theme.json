@@ -72,7 +72,7 @@
       }
     },
     {
-      "scope": ["storage.type"],
+      "scope": ["storage.type", "keyword"],
       "settings": {
         "foreground": "#d16d6d",
         "fontStyle": ""
@@ -86,7 +86,11 @@
       }
     },
     {
-      "scope": ["keyword.control", "keyword.operator.new"],
+      "scope": [
+        "keyword.control",
+        "keyword.operator.new",
+        "keyword.other.using"
+      ],
       "settings": {
         "foreground": "#d16d6d",
         "fontStyle": "bold"
@@ -175,7 +179,11 @@
       }
     },
     {
-      "scope": ["keyword.operator", "constant.character.escape"],
+      "scope": [
+        "keyword.operator",
+        "constant.character.escape",
+        "entity.name.function.operator"
+      ],
       "settings": {
         "foreground": "#6fcad8",
         "fontStyle": ""
@@ -184,7 +192,8 @@
     {
       "scope": [
         "storage.type.class.jsdoc",
-        "punctuation.definition.block.tag.jsdoc"
+        "punctuation.definition.block.tag.jsdoc",
+        "entity.name.function.preprocessor"
       ],
       "settings": {
         "foreground": "#6fcad8",
@@ -235,7 +244,8 @@
         "entity.name.type.module",
         "support.type.property-name",
         "entity.name.tag",
-        "keyword.other.definition.ini"
+        "keyword.other.definition.ini",
+        "entity.name.namespace"
       ],
       "settings": {
         "foreground": "#bd93d5",
