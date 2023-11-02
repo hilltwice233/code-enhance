@@ -9,6 +9,11 @@
 
     "editor.background": "#212020",
     "editor.foreground": "#aca9a5",
+    "editor.lineHighlightBorder": "#00000000",
+    "editor.lineHighlightBackground": "#181717",
+    "editor.wordHighlightBackground": "#1e2830",
+    "editorBracketMatch.border": "#00000000",
+    "editorBracketMatch.background": "#c4c0c0",
 
     "panel.background": "#181717",
     "panel.border": "#2f3133",
