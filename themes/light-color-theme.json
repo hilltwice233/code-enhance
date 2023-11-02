@@ -143,6 +143,13 @@
         "foreground": "#0e71a6",
         "fontStyle": ""
       }
+    },
+    {
+      "scope": ["entity.name.namespace"],
+      "settings": {
+        "foreground": "#af85cf",
+        "fontStyle": "bold"
+      }
     }
   ]
 }
