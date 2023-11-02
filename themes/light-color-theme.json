@@ -16,6 +16,7 @@
     "editor.wordHighlightBackground": "#eaf3e1",
     "editorBracketMatch.border": "#00000000",
     "editorBracketMatch.background": "#e3f0d6",
+    "editor.selectionBackground": "#cce2ef",
 
     "input.border": "#e4e3e1",
     "input.background": "#ffffff",
@@ -51,14 +52,14 @@
     {
       "scope": ["comment", "zh-mark"],
       "settings": {
-        "foreground": "#adafb0",
+        "foreground": "#9fa4a6",
         "fontStyle": "italic"
       }
     },
     {
       "scope": ["punctuation"],
       "settings": {
-        "foreground": "#c3c8ca",
+        "foreground": "#b4bcc0",
         "fontStyle": ""
       }
     },
