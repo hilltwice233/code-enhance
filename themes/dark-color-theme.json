@@ -10,6 +10,10 @@
     "editor.background": "#212020",
     "editor.foreground": "#aca9a5",
 
+    "panel.background": "#181717",
+    "panel.border": "#2f3133",
+    "panelTitle.activeBorder": "#359edb",
+
     "sideBar.background": "#181717",
     "sideBar.border": "#2f3133",
 
