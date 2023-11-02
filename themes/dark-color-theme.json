@@ -199,7 +199,8 @@
       "scope": [
         "keyword.operator",
         "constant.character.escape",
-        "entity.name.function.operator"
+        "entity.name.function.operator",
+        "storage.modifier.pointer"
       ],
       "settings": {
         "foreground": "#6fcad8",
