@@ -50,6 +50,13 @@
       }
     },
     {
+      "scope": ["text.html.markdown", "zh-mark"],
+      "settings": {
+        "foreground": "#414243",
+        "fontStyle": "italic"
+      }
+    },
+    {
       "scope": ["comment", "zh-mark"],
       "settings": {
         "foreground": "#9fa4a6",
@@ -113,6 +120,13 @@
       "scope": ["constant.numeric"],
       "settings": {
         "foreground": "#1596c4",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["markup.heading"],
+      "settings": {
+        "foreground": "#0e71a6",
         "fontStyle": "bold"
       }
     },
