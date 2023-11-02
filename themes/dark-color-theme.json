@@ -123,48 +123,48 @@
     {
       "scope": ["support.type", "entity.name.type"],
       "settings": {
-        "foreground": "#e8a043",
+        "foreground": "#d2b997",
         "fontStyle": ""
       }
     },
     {
       "scope": ["support.type.primitive"],
       "settings": {
-        "foreground": "#e8a043",
+        "foreground": "#d2b997",
         "fontStyle": "bold"
       }
     },
     {
       "scope": ["entity.name.type.enum"],
       "settings": {
-        "foreground": "#e8a043",
+        "foreground": "#d2b997",
         "fontStyle": "italic"
       }
     },
     {
       "scope": ["constant.language.boolean", "constant.language.json"],
       "settings": {
-        "foreground": "#e8a043",
+        "foreground": "#d2b997",
         "fontStyle": "italic bold"
       }
     },
     {
       "scope": ["markup.italic"],
       "settings": {
-        "foreground": "#e8a043",
+        "foreground": "#d2b997",
         "fontStyle": "italic underline"
       }
     },
     {
       "scope": ["entity.name.function", "markup.bold"],
       "settings": {
-        "foreground": "#f7c42a"
+        "foreground": "#fbd640"
       }
     },
     {
       "scope": ["markup.bold"],
       "settings": {
-        "foreground": "#f7c42a",
+        "foreground": "#fbd640",
         "fontStyle": "bold"
       }
     },
