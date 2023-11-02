@@ -3,8 +3,11 @@
 A vscode toolkit that make coding more comfortable.
 
 This extension is unstable yet,
-if you'd like to use it,
-please wait until the first release.
+and had not been published into the vscode extension marketplace.
+
+If you'd like to use it regardless of potential exceptions,
+please [compile it](#how-to-build) or download the release package
+and install via `vsix` on your local device.
 
 ## Git Tools
 
@@ -94,6 +97,21 @@ and improve the coding experience.
 
 > <div style="opacity:25%;">encoding: utf8, direction: ltr</div>
 > <div class="outline">横平竖直</div>
+
+## How to Build
+
+Make sure `npm` is available on your device and install all the dependencies.
+Then run the following npm script.
+
+```bash
+npm run package
+```
+
+Such script will compile all components and output into the
+[`extension`](./extension) folder.
+If the process finished successfully,
+then you can find a `code-enhance-x.y.z.vsix` release under the
+[`extension`](./extension) folder.
 
 ## License: MIT
 
