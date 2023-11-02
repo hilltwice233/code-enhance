@@ -145,7 +145,7 @@
       }
     },
     {
-      "scope": ["entity.name.namespace"],
+      "scope": ["entity.name.namespace", "constant.other.option"],
       "settings": {
         "foreground": "#af85cf",
         "fontStyle": "bold"
