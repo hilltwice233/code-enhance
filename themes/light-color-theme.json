@@ -46,6 +46,33 @@
         "foreground": "#adafb0",
         "fontStyle": "italic"
       }
+    },
+    {
+      "scope": ["punctuation"],
+      "settings": {
+        "foreground": "#c3c8ca",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["constant.character.escape"],
+      "settings": {
+        "foreground": "#a83333"
+      }
+    },
+    {
+      "scope": ["constant.language"],
+      "settings": {
+        "foreground": "#a83333",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["support.type.property-name"],
+      "settings": {
+        "foreground": "#0e71a6",
+        "fontStyle": "italic bold"
+      }
     }
   ]
 }
