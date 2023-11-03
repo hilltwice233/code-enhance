@@ -25,7 +25,7 @@ please add [an issue here](https://github.com/hilltwice233/code-enhance/issues).
 |  Language   | Dark | Light |        VSCode Extension         |
 | :---------: | :--: | :---: | :-----------------------------: |
 |    C/C++    |  ✔️  |  ✔️   |      `ms-vscode.cpptools`       |
-|    Dart     |  ✔️  |  ❌   |      `Dart-Code.dart-code`      |
+|    Dart     |  ✔️  |  ✔️   |      `Dart-Code.dart-code`      |
 |   Ignore    |  ✔️  |  ✔️   |            build-in             |
 | JavaScript  |  ✔️  |  ❌   |            build-in             |
 |    Json     |  ✔️  |  ✔️   |            build-in             |
