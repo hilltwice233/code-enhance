@@ -164,7 +164,11 @@
       }
     },
     {
-      "scope": ["support.type.property-name", "entity.name.tag"],
+      "scope": [
+        "support.type.property-name",
+        "entity.name.tag",
+        "keyword.other.definition.ini"
+      ],
       "settings": {
         "foreground": "#0e71a6",
         "fontStyle": "italic bold"
