@@ -24,7 +24,7 @@ and install via `vsix` on your local device.
 |   Ignore    |  ✔️  |  ✔️   |            build-in             |
 | JavaScript  |  ✔️  |  ❌   |            build-in             |
 |    Json     |  ✔️  |  ✔️   |            build-in             |
-|  Markdown   |  ✔️  |  ❌   |            build-in             |
+|  Markdown   |  ✔️  |  ✔️   |            build-in             |
 | Properties  |  ✔️  |  ❌   |            build-in             |
 | ShellScript |  ❌  |  ✔️   | `mads-hartmann.bash-ide-vscode` |
 | TypeScript  |  ✔️  |  ❌   |            build-in             |
