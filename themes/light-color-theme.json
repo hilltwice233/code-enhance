@@ -21,6 +21,9 @@
     "input.border": "#e4e3e1",
     "input.background": "#ffffff",
 
+    "markdown.extension.editor.codeSpan.border": "#00000000",
+    "markdown.extension.editor.codeSpan.background": "#e4e3e1",
+
     "sideBar.background": "#fefdfa",
     "sideBar.border": "#e4e3e1",
 
