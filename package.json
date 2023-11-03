@@ -12,6 +12,9 @@
     "url": "https://github.com/hilltwice233/code-enhance"
   },
   "main": "extension.js",
+  "activationEvents": [
+    "workspaceContains:.git"
+  ],
   "contributes": {
     "themes": [
       {
@@ -27,12 +30,7 @@
         "path": "themes/light-color-theme.json"
       }
     ],
-    "commands": [
-      {
-        "command": "code-enhance.active",
-        "title": "Code Enhance: Active"
-      }
-    ]
+    "commands": []
   },
   "scripts": {
     "prepare": "husky install",
