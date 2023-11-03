@@ -18,11 +18,18 @@
     "editorBracketMatch.background": "#e3f0d6",
     "editor.selectionBackground": "#cce2ef",
 
+    "editorLineNumber.foreground": "#9fa4a6",
+    "editorLineNumber.activeForeground": "#3a80e1",
+
     "input.border": "#e4e3e1",
     "input.background": "#ffffff",
 
     "markdown.extension.editor.codeSpan.border": "#00000000",
     "markdown.extension.editor.codeSpan.background": "#e4e3e1",
+
+    "panel.background": "#fefdfa",
+    "panel.border": "#e4e3e1",
+    "panelTitle.activeBorder": "#3a80e1",
 
     "sideBar.background": "#fefdfa",
     "sideBar.border": "#e4e3e1",
