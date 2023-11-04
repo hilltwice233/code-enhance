@@ -102,10 +102,10 @@
       }
     },
     {
-      "scope": ["markup.inline.raw.string"],
+      "scope": ["markup.inline.raw.string", "zh-mark"],
       "settings": {
         "foreground": "#d16d6d",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
@@ -118,6 +118,13 @@
       "settings": {
         "foreground": "#d16d6d",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["constant.language.json"],
+      "settings": {
+        "foreground": "#d16d6d",
+        "fontStyle": "italic bold"
       }
     },
     {
@@ -142,7 +149,7 @@
       }
     },
     {
-      "scope": ["constant.language.boolean", "constant.language.json"],
+      "scope": ["constant.language.boolean"],
       "settings": {
         "foreground": "#d2b997",
         "fontStyle": "italic bold"

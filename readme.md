@@ -1,5 +1,10 @@
 # Code Enhance
 
+[Deutsch](./locales/readme.de.md) |
+[日本語](./locales/readme.jp.md) |
+[Русский язык](./locales/readme.ru.md) |
+[中文](./locales/readme.zh.md)
+
 A vscode toolkit that make coding more comfortable.
 
 This extension is unstable yet,
@@ -12,9 +17,10 @@ and `install from vsix` on your local device.
 If you'd like to contribute to this project,
 please read [Code of Conduct](./code_of_conduct.md) before commit your code.
 
-## Git Tools
+## Functions list
 
-1. Show git commit message of each lines.
+1. Light/Dark color theme for better coding experience.
+2. Show git commit message of each lines.
 
 ## Color Theme
 
