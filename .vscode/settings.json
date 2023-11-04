@@ -22,5 +22,14 @@
   // Spell checker.
   "cSpell.language": "de,en,ru",
   "cSpell.enableFiletypes": ["*"],
-  "cSpell.words": ["cpptools", "enummember", "hilltwice", "vitest", "vsix"]
+  "cSpell.words": [
+    "cpptools",
+    "deutsch",
+    "enummember",
+    "hilltwice",
+    "vitest",
+    "vsix",
+    "русский",
+    "язык"
+  ]
 }
