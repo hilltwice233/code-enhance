@@ -102,10 +102,10 @@
       }
     },
     {
-      "scope": ["markup.inline.raw.string"],
+      "scope": ["markup.inline.raw.string", "zh-mark"],
       "settings": {
         "foreground": "#d16d6d",
-        "fontStyle": ""
+        "fontStyle": "italic"
       }
     },
     {
