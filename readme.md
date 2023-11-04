@@ -9,10 +9,8 @@ If you'd like to use it regardless of potential exceptions,
 please [build it](#how-to-build) or download the release package
 and `install from vsix` on your local device.
 
-The **code of conduct** and **contribution guide** are not prepared yet.
-And the code is not tidy enough for collaboration.
-If there's any problem with such project,
-please add [an issue here](https://github.com/hilltwice233/code-enhance/issues).
+If you'd like to contribute to this project,
+please read [Code of Conduct](./code_of_conduct.md) before commit your code.
 
 ## Git Tools
 
