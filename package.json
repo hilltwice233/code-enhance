@@ -12,9 +12,6 @@
     "url": "https://github.com/hilltwice233/code-enhance"
   },
   "main": "extension.js",
-  "activationEvents": [
-    "workspaceContains:.git"
-  ],
   "contributes": {
     "themes": [
       {

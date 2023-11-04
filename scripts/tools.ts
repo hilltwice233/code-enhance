@@ -7,6 +7,8 @@ import {
 } from "node:fs"
 import {join} from "node:path"
 
+const activationEvents: string[] = ["workspaceContains:.git"]
+
 /**
  * Process the manifest file of node package (the `package.json` file):
  * 1. Remove dev dependencies and npm scripts.
@@ -22,6 +24,7 @@ export function compileManifest(source: string, dist: string) {
   json.scripts = undefined
   json.devDependencies = undefined
   json.type = "commonjs"
+  json.activationEvents = activationEvents
   resolveManifestCJK(json)
   writeFileSync(join(dist, manifest), JSON.stringify(json))
 }
