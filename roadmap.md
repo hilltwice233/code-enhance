@@ -5,3 +5,4 @@
 3. Count lines and space cost in folders.
 4. Git commit heatmap visualization.
 5. Color theme for markdown preview.
+6. Auto generate C/C++ header file.
