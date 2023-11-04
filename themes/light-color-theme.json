@@ -137,11 +137,19 @@
     {
       "scope": [
         "keyword.control.directive.include",
-        "punctuation.definition.directive"
+        "punctuation.definition.directive",
+        "keyword.control.directive.define"
       ],
       "settings": {
         "foreground": "#a83333",
         "fontStyle": "italic bold"
+      }
+    },
+    {
+      "scope": ["storage.modifier"],
+      "settings": {
+        "foreground": "#a83333",
+        "fontStyle": "italic"
       }
     },
     {
