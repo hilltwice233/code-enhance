@@ -8,7 +8,7 @@
   "explorer.fileNesting.patterns": {
     "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock",
     "*.ts": "${capture}.js",
-    "readme.md": "license.txt"
+    "readme.md": "license.txt, code_of_conduct.md"
   },
 
   // Specify file types.
