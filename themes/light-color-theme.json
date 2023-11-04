@@ -209,7 +209,7 @@
       }
     },
     {
-      "scope": ["keyword.operator"],
+      "scope": ["keyword.operator", "constant.other.placeholder"],
       "settings": {
         "foreground": "#af85cf",
         "fontStyle": ""
