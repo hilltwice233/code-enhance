@@ -101,7 +101,7 @@
       }
     },
     {
-      "scope": ["punctuation", "source.dart"],
+      "scope": ["punctuation", "storage.modifier.array.bracket", "source.dart"],
       "settings": {
         "foreground": "#b4bcc0",
         "fontStyle": ""
