@@ -20,7 +20,7 @@ please add [an issue here](https://github.com/hilltwice233/code-enhance/issues).
 
 ## Color Theme
 
-### Supported languages and file types
+Supported languages and file types:
 
 |  Language   | Dark | Light |        VSCode Extension         |
 | :---------: | :--: | :---: | :-----------------------------: |
@@ -34,8 +34,6 @@ please add [an issue here](https://github.com/hilltwice233/code-enhance/issues).
 | ShellScript |  ❌  |  ✔️   | `mads-hartmann.bash-ide-vscode` |
 | TypeScript  |  ✔️  |  ❌   |            build-in             |
 |    Yaml     |  ✔️  |  ✔️   |      `redhat.vscode-yaml`       |
-
-### CJK comment optimization
 
 There is a unique CJK mode color theme
 on each of the dark mode and the light mode.
