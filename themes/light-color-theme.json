@@ -156,14 +156,14 @@
       }
     },
     {
-      "scope": "string",
+      "scope": ["string"],
       "settings": {
         "foreground": "#83a45c",
         "fontStyle": "bold"
       }
     },
     {
-      "scope": ["markup.quote", "zh-mark"],
+      "scope": ["markup.quote", "comment.block.documentation", "zh-mark"],
       "settings": {
         "foreground": "#83a45c",
         "fontStyle": "italic"
