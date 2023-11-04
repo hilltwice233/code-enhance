@@ -1,0 +1,19 @@
+# encoding: utf8
+#
+# Below is a list of people and organizations that have contributed
+# to the Code Enhance project. Names should be added to the list like so:
+#
+#   username/organization <email address> (Your Name)
+#
+#   1. `username` is the user.name of your Git commit account.
+#   2. `email address` is the user.email of your Git commit account.
+#   3. `Your Name` is your display name and may also in your language(s).
+#   4. Please sort the names alphabetically as the `username`.
+#
+# Anyone who has contributed to the Code Enhance project in any way (not
+# limited to submitting PRs) is welcome to submit a PR to add their
+# name to this file.
+#
+# Thanks to everyone for your contributions!
+
+hilltwice <hilltwice@163.com> (姬廣泓 / James Hilltwice)
