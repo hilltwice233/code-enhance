@@ -16,7 +16,7 @@ please add [an issue here](https://github.com/hilltwice233/code-enhance/issues).
 
 ## Git Tools
 
-1. Show git changes of each lines. (unstable)
+1. Show git commit message of each lines.
 
 ## Color Theme
 
