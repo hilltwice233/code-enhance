@@ -6,9 +6,9 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    "readme.md": "license.txt, code_of_conduct.md",
     "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock",
-    "*.ts": "${capture}.js",
-    "readme.md": "license.txt, code_of_conduct.md"
+    "*.ts": "${capture}.js"
   },
 
   // Specify file types.
