@@ -7,7 +7,7 @@ and had not been published into the vscode extension marketplace.
 
 If you'd like to use it regardless of potential exceptions,
 please [build it](#how-to-build) or download the release package
-and install via `vsix` on your local device.
+and `install from vsix` on your local device.
 
 The **code of conduct** and **contribution guide** are not prepared yet.
 And the code is not tidy enough for collaboration.
