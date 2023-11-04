@@ -52,6 +52,7 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "enum": {"foreground": "#5d6266", "fontStyle": "italic bold"},
+    "type": {"foreground": "#5d6266", "fontStyle": "bold"},
     "parameter.label": {"foreground": "#9fa4a6", "fontStyle": "italic"},
     "comment.documentation": {"foreground": "#83a45c"},
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
@@ -111,7 +112,8 @@
       "scope": [
         "constant.character.escape",
         "keyword",
-        "storage.type.function"
+        "storage.type.function",
+        "storage.type.built-in"
       ],
       "settings": {
         "foreground": "#a83333",
@@ -120,11 +122,12 @@
     },
     {
       "scope": [
-        "storage.type.built-in",
         "variable.parameter.positional.shell",
         "variable.language.special",
         "markup.bold",
-        "constant.language"
+        "constant.language",
+        "storage.type.struct",
+        "keyword.control"
       ],
       "settings": {
         "foreground": "#a83333",
