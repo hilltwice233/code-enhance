@@ -1,5 +1,10 @@
 # Code Enhance
 
+[Deutsch](./locales/readme.de.md) |
+[日本語](./locales/readme.jp.md) |
+[Русский язык](./locales/readme.ru.md) |
+[中文](./locales/readme.zh.md)
+
 A vscode toolkit that make coding more comfortable.
 
 This extension is unstable yet,

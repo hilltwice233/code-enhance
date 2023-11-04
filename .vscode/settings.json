@@ -20,6 +20,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Spell checker.
+  "cSpell.language": "de,en,ru",
   "cSpell.enableFiletypes": ["*"],
   "cSpell.words": ["cpptools", "enummember", "hilltwice", "vitest", "vsix"]
 }
