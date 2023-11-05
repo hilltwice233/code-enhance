@@ -53,6 +53,7 @@
   "semanticTokenColors": {
     "enum": {"foreground": "#5d6266", "fontStyle": "italic bold"},
     "type": {"foreground": "#5d6266", "fontStyle": "bold"},
+    "interface": {"foreground": "#5d6266", "fontStyle": "italic bold"},
     "parameter.label": {"foreground": "#9fa4a6", "fontStyle": "italic"},
     "comment.documentation": {"foreground": "#83a45c"},
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
@@ -64,6 +65,13 @@
       "settings": {
         "foreground": "#5d6266",
         "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": ["entity.name.type.interface"],
+      "settings": {
+        "foreground": "#5d6266",
+        "fontStyle": "italic bold"
       }
     },
     {

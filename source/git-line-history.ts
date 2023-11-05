@@ -43,6 +43,34 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
   )
 }
 
+interface GitCommitInfo {
+  code: string
+  commitType: string
+  mergeType: string
+  childNum: number
+}
+
+interface GitCommitUserInfo {
+  name: string
+  email: string
+  time: number
+  timeZone: string
+}
+
+class GitLineBlame {
+  commitInfo: GitCommitInfo
+  author: GitCommitUserInfo
+  committer: GitCommitUserInfo
+  summary: string
+  boundary: string
+  fileName: string
+  lineContent: string
+
+  constructor(raw: string) {
+    const lines = raw.split("\n")
+  }
+}
+
 /**
  * Result of the `git blame -p` command will be formatted into such
  * key-value pair for further processing.
