@@ -124,7 +124,12 @@
       }
     },
     {
-      "scope": ["constant.character.escape", "keyword", "storage.type"],
+      "scope": [
+        "constant.character.escape",
+        "keyword",
+        "storage.type",
+        "keyword.operator.expression.typeof"
+      ],
       "settings": {
         "foreground": "#a83333",
         "fontStyle": ""
@@ -156,7 +161,11 @@
       }
     },
     {
-      "scope": ["storage.modifier"],
+      "scope": [
+        "storage.modifier",
+        "variable.language.this",
+        "variable.language.super"
+      ],
       "settings": {
         "foreground": "#a83333",
         "fontStyle": "italic"

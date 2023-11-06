@@ -23,9 +23,8 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
 
       const args = ["blame", "-p", path, `-L${lineNumber + 1},+1`]
       spawn("git", args, {cwd}).stdout.on("data", (data) => {
-        const fields = parseGitBlameFields(data.toString())
-        const message = formatMessage(fields)
-        console.log(message)
+        const blame = new GitLineBlame(data.toString())
+        const message = blame.formatLineMessage()
 
         editor.setDecorations(decorationType, [
           {
@@ -43,65 +42,107 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
   )
 }
 
-interface GitCommitInfo {
-  code: string
-  commitType: string
-  mergeType: string
-  childNum: number
-}
-
-interface GitCommitUserInfo {
-  name: string
-  email: string
-  time: number
-  timeZone: string
-}
-
-class GitLineBlame {
-  commitInfo: GitCommitInfo
-  author: GitCommitUserInfo
-  committer: GitCommitUserInfo
-  summary: string
-  boundary: string
-  fileName: string
-  lineContent: string
-
-  constructor(raw: string) {
-    const lines = raw.split("\n")
-  }
-}
-
 /**
  * Result of the `git blame -p` command will be formatted into such
  * key-value pair for further processing.
  */
 type BlameFields = {[key: string]: string}
 
-/**
- * Format the output of git blame command into key-value pairs
- * for further programmable processing.
- *
- * Here are two special lines: the first line and the last line.
- * The key of the first line will be `commit-id`,
- * while the key of the last line will be `raw`, which is the raw line.
- *
- * @param raw output string of git blame -p
- * @returns formatted key-value pairs
- */
-function parseGitBlameFields(raw: string): BlameFields {
-  const lines = raw.trim().split("\n")
-  lines[0] = `commit-id ${lines[0]}`
-  lines[lines.length - 1] = `raw ${lines[lines.length - 1].trim()}`
-  return Object.fromEntries(
-    lines.map((line) => {
-      const parts = line.split(" ")
-      const key = parts[0]
-      const value = parts.slice(1).join(" ")
-      return [key, value]
-    }),
-  )
+class GitCommitUserInfo {
+  readonly name: string
+  readonly email: string
+  readonly time: number
+  readonly timeZone: string
+
+  constructor(name: string, email: string, time: string, timeZone: string) {
+    this.name = name
+    this.email = email
+    this.time = parseInt(time)
+    this.timeZone = timeZone
+  }
+
+  /**
+   * Format the relative time from the commit timestamp to now into
+   * a human readable time string to mark how long it is since the last commit.
+   *
+   * @returns readable relative time string.
+   */
+  formatRelativeTime(): string {
+    const now = Math.floor(new Date().getTime() / 1000)
+    let ago = now - this.time
+
+    if (ago < 60) return `${ago}s`
+    ago = Math.floor(ago / 60)
+    if (ago < 60) return `${ago}min`
+    ago = Math.floor(ago / 60)
+    if (ago < 24) return `${ago}hours`
+    ago = Math.floor(ago / 24)
+    if (ago < 31) return `${ago}days`
+    ago = Math.floor(ago / 30.5)
+    if (ago < 12) return `${ago}months`
+    ago = Math.floor(ago / 12)
+    return `${ago}years`
+  }
 }
 
-function formatMessage(fields: BlameFields) {
-  return `${fields["author"]} • ${fields["summary"]}`
+class GitLineBlame {
+  readonly author: GitCommitUserInfo
+  readonly committer: GitCommitUserInfo
+  readonly summary: string
+
+  constructor(raw: string) {
+    const fields = this.parseFields(raw)
+    this.summary = fields["summary"] ?? ""
+
+    this.author = new GitCommitUserInfo(
+      fields["author"] ?? "",
+      fields["author-mail"] ?? "",
+      fields["author-time"] ?? "",
+      fields["author-tz"] ?? "",
+    )
+
+    this.committer = new GitCommitUserInfo(
+      fields["committer"] ?? "",
+      fields["committer-mail"] ?? "",
+      fields["committer-time"] ?? "",
+      fields["committer-tz"] ?? "",
+    )
+  }
+
+  /**
+   * Format the output of git blame command into key-value pairs
+   * for further programmable processing.
+   *
+   * Here are two special lines: the first line and the last line.
+   * The key of the first line will be `headline`,
+   * while the key of the last line will be `content`.
+   *
+   * @param raw output string of `git blame -p -LXX,+1 <file>`
+   * @returns formatted key-value pairs
+   */
+  private parseFields(raw: string): {[key: string]: string} {
+    const lines = raw.trim().split("\n")
+    lines[0] = `headline ${lines[0]}`
+    lines[lines.length - 1] = `content ${lines[lines.length - 1]}`
+    return Object.fromEntries(
+      lines.map((line) => {
+        const parts = line.split(" ")
+        const key = parts[0]
+        const value = parts.slice(1).join(" ")
+        return [key, value]
+      }),
+    )
+  }
+
+  /**
+   * Format the information parsed from `git blame -p -LXX,+1 <file>`
+   * into the string to display as the suffix of current line.
+   *
+   * @returns formatter line message to display.
+   */
+  formatLineMessage(): string {
+    const name = this.committer.name
+    const time = this.committer.formatRelativeTime()
+    return `${name}, ${time} • ${this.summary}`
+  }
 }
