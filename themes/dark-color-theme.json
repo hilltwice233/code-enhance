@@ -169,6 +169,7 @@
         "foreground": "#fbd640"
       }
     },
+
     {
       "scope": ["markup.bold"],
       "settings": {
@@ -236,6 +237,13 @@
       "scope": ["variable.other.constant"],
       "settings": {
         "foreground": "#94b6c6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["support.type.property-name.table.toml"],
+      "settings": {
+        "foreground": "#34ade6",
         "fontStyle": ""
       }
     },
