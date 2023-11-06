@@ -56,6 +56,7 @@
     "interface": {"foreground": "#5d6266", "fontStyle": "italic bold"},
     "parameter.label": {"foreground": "#9fa4a6", "fontStyle": "italic"},
     "comment.documentation": {"foreground": "#83a45c"},
+    "method": {"fontStyle": "italic"},
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"}
   },

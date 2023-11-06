@@ -34,6 +34,7 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
               lineNumber,
               line.text.length + message.length,
             ),
+            hoverMessage: "hover message",
             renderOptions: {after: {contentText: message}},
           },
         ])
@@ -58,6 +59,10 @@ class GitCommitUserInfo {
     this.email = email
     this.time = parseInt(time)
     this.timeZone = timeZone
+  }
+
+  formatLine(): string {
+    return ""
   }
 
   /**
@@ -151,5 +156,9 @@ class GitLineBlame {
     return this.summary === ""
       ? `${name}, ${time}`
       : `${name}, ${time} • ${this.summary}`
+  }
+
+  formatHoverMessage(): string {
+    return ``
   }
 }
