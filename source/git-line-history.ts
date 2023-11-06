@@ -1,6 +1,7 @@
 import {spawn} from "node:child_process"
 import {relative} from "node:path"
 import * as vscode from "vscode"
+import {formatTime} from "./utils.js"
 
 const decorationType = vscode.window.createTextEditorDecorationType({
   after: {
@@ -56,19 +57,19 @@ class GitCommitUserInfo {
   readonly timeZone: string
 
   constructor(name: string, email: string, time: string, timeZone: string) {
-    this.committed = name === "Not Committed Yet"
+    this.committed = name !== "Not Committed Yet"
     this.name = name
     this.email = email
     this.time = parseInt(time)
     this.timeZone = timeZone
   }
 
-  formatLine(): string {
-    return `${this.formatAbsoluteTime()}, ${this.name} <${this.email}>`
+  formatUser(): string {
+    return `${this.name} <${this.email}>`
   }
 
-  formatAbsoluteTime(): string {
-    return "absolute time"
+  formatTime(): string {
+    return formatTime(this.time * 1000)
   }
 
   /**
@@ -156,8 +157,8 @@ class GitLineBlame {
     const name = this.committer.name
     const time = this.committer.formatRelativeTime()
     return this.committer.committed
-      ? `${name}, ${time}`
-      : `${name}, ${time} • ${this.summary ?? ""}`
+      ? `${name}, ${time} • ${this.summary ?? ""}`
+      : `${name}, ${time}`
   }
 
   /**
@@ -165,10 +166,13 @@ class GitLineBlame {
    * @returns message string to be displayed in the hover panel.
    */
   formatHoverMessage(): string {
-    return this.committer.committed
-      ? `Author: ${this.author.formatLine()}\n\n` +
-          `Committer: ${this.committer.formatLine()}\n\n` +
-          `${this.summary}`
-      : "Not committed yet..."
+    if (!this.committer.committed) return "Not committed yet..."
+    return (
+      `**Author**: ${this.author.formatUser()}, ` +
+      `${this.author.formatTime()}\n\n` +
+      `**Committer**: ${this.committer.formatUser()}, ` +
+      `${this.committer.formatTime()}\n\n` +
+      `${this.summary}`
+    )
   }
 }
