@@ -9,9 +9,7 @@ A vscode toolkit that make coding more comfortable.
 
 This extension is unstable yet,
 and had not been published into the vscode extension marketplace.
-
-If you'd like to use it regardless of potential exceptions,
-please [build it](#how-to-build) or download the release package
+If you'd like to use it, please download the latest release
 and `install from vsix` on your local device.
 
 If you'd like to contribute to this project,
