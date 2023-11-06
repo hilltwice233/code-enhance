@@ -34,7 +34,7 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
               lineNumber,
               line.text.length + message.length,
             ),
-            hoverMessage: "hover message",
+            hoverMessage: blame.formatHoverMessage(),
             renderOptions: {after: {contentText: message}},
           },
         ])
@@ -49,12 +49,14 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
  * And it also contains the time-stamp info about the commit.
  */
 class GitCommitUserInfo {
+  readonly committed: boolean
   readonly name: string
   readonly email: string
   readonly time: number
   readonly timeZone: string
 
   constructor(name: string, email: string, time: string, timeZone: string) {
+    this.committed = name === "Not Committed Yet"
     this.name = name
     this.email = email
     this.time = parseInt(time)
@@ -62,7 +64,11 @@ class GitCommitUserInfo {
   }
 
   formatLine(): string {
-    return ""
+    return `${this.formatAbsoluteTime()}, ${this.name} <${this.email}>`
+  }
+
+  formatAbsoluteTime(): string {
+    return "absolute time"
   }
 
   /**
@@ -100,6 +106,7 @@ class GitLineBlame {
 
   constructor(raw: string) {
     const fields = this.parseFields(raw)
+    this.summary = fields["summary"]
     this.author = new GitCommitUserInfo(
       fields["author"] ?? "",
       fields["author-mail"] ?? "",
@@ -112,11 +119,6 @@ class GitLineBlame {
       fields["committer-time"] ?? "",
       fields["committer-tz"] ?? "",
     )
-
-    this.summary =
-      this.committer.name === "Not Committed Yet" && fields["summary"]
-        ? ""
-        : fields["summary"]
   }
 
   /**
@@ -153,12 +155,20 @@ class GitLineBlame {
   formatLineMessage(): string {
     const name = this.committer.name
     const time = this.committer.formatRelativeTime()
-    return this.summary === ""
+    return this.committer.committed
       ? `${name}, ${time}`
-      : `${name}, ${time} • ${this.summary}`
+      : `${name}, ${time} • ${this.summary ?? ""}`
   }
 
+  /**
+   * Format the message to display as hover.
+   * @returns message string to be displayed in the hover panel.
+   */
   formatHoverMessage(): string {
-    return ``
+    return this.committer.committed
+      ? `Author: ${this.author.formatLine()}\n\n` +
+          `Committer: ${this.committer.formatLine()}\n\n` +
+          `${this.summary}`
+      : "Not committed yet..."
   }
 }
