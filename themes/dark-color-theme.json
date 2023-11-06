@@ -88,7 +88,8 @@
         "meta.brace",
         "punctuation",
         "storage.modifier.array.bracket.square",
-        "source.dart"
+        "source.dart",
+        "meta.body.function.definition"
       ],
       "settings": {
         "foreground": "#5c6063",
@@ -266,7 +267,7 @@
       }
     },
     {
-      "scope": ["variable.other.enummember"],
+      "scope": ["variable.other.enummember", "constant.other.placeholder"],
       "settings": {
         "foreground": "#bd93d5",
         "fontStyle": ""
