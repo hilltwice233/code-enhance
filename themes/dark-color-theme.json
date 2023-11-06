@@ -41,6 +41,7 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "method": {"fontStyle": "italic"},
+    "memberOperatorOverload": {"foreground": "#646769", "fontStyle": ""},
     "comment.documentation": {"foreground": "#548759"},
     "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
     "decorator": {"foreground": "#6fcad8", "fontStyle": "italic"},
