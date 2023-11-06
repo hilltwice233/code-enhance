@@ -267,7 +267,11 @@
       }
     },
     {
-      "scope": ["variable.other.enummember", "constant.other.placeholder"],
+      "scope": [
+        "variable.other.enummember",
+        "constant.other.placeholder",
+        "constant.other.option"
+      ],
       "settings": {
         "foreground": "#bd93d5",
         "fontStyle": ""
