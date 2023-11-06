@@ -4,7 +4,8 @@
 2. Use ascii characters in commit message for not all terminal are utf8.
 3. Name your branch as your user name (also ascii).
 4. Pull request to the `dev` branch rather than the `main` branch.
-5. Anyone who had contributed to this project are welcomed to add their names
+5. Title of PRs on GitHub should be lowercased.
+6. Anyone who had contributed to this project are welcomed to add their names
    in the [Author's List](./authors.txt)
 
 ## About locales and translations
