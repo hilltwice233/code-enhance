@@ -33,7 +33,9 @@ Supported languages and file types:
 |    Json     |  ✔️  |  ✔️   |            build-in             |
 |  Markdown   |  ✔️  |  ✔️   |            build-in             |
 | Properties  |  ✔️  |  ✔️   |            build-in             |
+|    Rust     |  ✔️  |  ❌   |    `rust-lang.rust-analyzer`    |
 | ShellScript |  ❌  |  ✔️   | `mads-hartmann.bash-ide-vscode` |
+|    Toml     |  ✔️  |  ❌   |   `tamasfe.even-better-toml`    |
 | TypeScript  |  ✔️  |  ❌   |            build-in             |
 |    Yaml     |  ✔️  |  ✔️   |      `redhat.vscode-yaml`       |
 

@@ -43,6 +43,7 @@
     "method": {"fontStyle": "italic"},
     "comment.documentation": {"foreground": "#548759"},
     "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
+    "decorator": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.static": {"foreground": "#bd93d5", "fontStyle": ""},
@@ -168,6 +169,7 @@
         "foreground": "#fbd640"
       }
     },
+
     {
       "scope": ["markup.bold"],
       "settings": {
@@ -235,6 +237,13 @@
       "scope": ["variable.other.constant"],
       "settings": {
         "foreground": "#94b6c6",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": ["support.type.property-name.table.toml"],
+      "settings": {
+        "foreground": "#34ade6",
         "fontStyle": ""
       }
     },
