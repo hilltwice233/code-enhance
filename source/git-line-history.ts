@@ -43,11 +43,10 @@ export function enableGitLineHistory(context: vscode.ExtensionContext) {
 }
 
 /**
- * Result of the `git blame -p` command will be formatted into such
- * key-value pair for further processing.
+ * The message of a git user in a commit.
+ * It can be an author or a committer.
+ * And it also contains the time-stamp info about the commit.
  */
-type BlameFields = {[key: string]: string}
-
 class GitCommitUserInfo {
   readonly name: string
   readonly email: string
@@ -85,6 +84,10 @@ class GitCommitUserInfo {
   }
 }
 
+/**
+ * Information parsed from the git blame of a line.
+ * It also provide methods of parsing and formatting.
+ */
 class GitLineBlame {
   readonly author: GitCommitUserInfo
   readonly committer: GitCommitUserInfo
