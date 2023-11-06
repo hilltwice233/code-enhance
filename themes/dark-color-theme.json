@@ -43,6 +43,7 @@
     "method": {"fontStyle": "italic"},
     "comment.documentation": {"foreground": "#548759"},
     "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
+    "decorator": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.static": {"foreground": "#bd93d5", "fontStyle": ""},
