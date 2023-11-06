@@ -95,21 +95,23 @@ class GitLineBlame {
 
   constructor(raw: string) {
     const fields = this.parseFields(raw)
-    this.summary = fields["summary"] ?? ""
-
     this.author = new GitCommitUserInfo(
       fields["author"] ?? "",
       fields["author-mail"] ?? "",
       fields["author-time"] ?? "",
       fields["author-tz"] ?? "",
     )
-
     this.committer = new GitCommitUserInfo(
       fields["committer"] ?? "",
       fields["committer-mail"] ?? "",
       fields["committer-time"] ?? "",
       fields["committer-tz"] ?? "",
     )
+
+    this.summary =
+      this.committer.name === "Not Committed Yet" && fields["summary"]
+        ? ""
+        : fields["summary"]
   }
 
   /**
@@ -146,6 +148,8 @@ class GitLineBlame {
   formatLineMessage(): string {
     const name = this.committer.name
     const time = this.committer.formatRelativeTime()
-    return `${name}, ${time} • ${this.summary}`
+    return this.summary === ""
+      ? `${name}, ${time}`
+      : `${name}, ${time} • ${this.summary}`
   }
 }
