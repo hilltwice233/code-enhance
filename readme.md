@@ -9,20 +9,18 @@ A vscode toolkit that make coding more comfortable.
 
 This extension is unstable yet,
 and had not been published into the vscode extension marketplace.
-
-If you'd like to use it regardless of potential exceptions,
-please [build it](#how-to-build) or download the release package
+If you'd like to use it, please download the latest release
 and `install from vsix` on your local device.
 
 If you'd like to contribute to this project,
 please read [Code of Conduct](./code_of_conduct.md) before commit your code.
 
-## Functions list
+## Enhanced git visualization
 
-1. Light/Dark color theme for better coding experience.
-2. Show git commit message of each lines.
+1. Show committer, relative time and commit summary as the suffix of a line.
+2. Show committer, email and absolute time when hover on the suffix.
 
-## Color Theme
+## Enhanced color theme for multi-languages
 
 Supported languages and file types:
 
