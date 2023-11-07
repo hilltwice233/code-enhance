@@ -60,14 +60,14 @@
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
     "class.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
-    "variable.readonly": {"foreground": "#af85cf", "fontStyle": ""},
+    "variable.readonly": {"foreground": "#855ca5", "fontStyle": ""},
     "variable.declaration.readonly": {
-      "foreground": "#af85cf",
+      "foreground": "#855ca5",
       "fontStyle": ""
     },
-    "property.readonly": {"foreground": "#af85cf", "fontStyle": ""},
+    "property.readonly": {"foreground": "#855ca5", "fontStyle": ""},
     "property.declaration.readonly": {
-      "foreground": "#af85cf",
+      "foreground": "#855ca5",
       "fontStyle": ""
     }
   },
