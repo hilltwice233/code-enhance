@@ -46,6 +46,7 @@
     "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
     "decorator": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
+    "class.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.static": {"foreground": "#bd93d5", "fontStyle": ""},
     "enumMember": {"foreground": "#bd93d5", "fontStyle": "italic"},
