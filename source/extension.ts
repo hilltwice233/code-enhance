@@ -1,8 +1,8 @@
 import * as vscode from "vscode"
-import {enableGitLineHistory} from "./git-line-history.js"
+import {enableGitLineBlame} from "./git-line-blame.js"
 
 export function activate(context: vscode.ExtensionContext) {
-  enableGitLineHistory(context)
+  enableGitLineBlame(context)
 }
 
 export function deactivate() {}
