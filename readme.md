@@ -17,8 +17,8 @@ please read [Code of Conduct](./code_of_conduct.md) before commit your code.
 
 ## Enhanced git visualization
 
-1. Show committer, relative time and commit summary as the suffix of a line.
-2. Show committer, email and absolute time when hover on the suffix.
+1. Show author, relative time and commit summary as the suffix of a line.
+2. Show author, email and absolute time when hover on the suffix.
 
 ## Enhanced color theme for multi-languages
 
