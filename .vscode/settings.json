@@ -14,7 +14,7 @@
   // Specify file types.
   "files.associations": {"pre-commit": "shellscript"},
 
-  // Prettier default formatter.
+  // Prettier default formatter and auto format on save.
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {"source.organizeImports": true},
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -27,6 +27,7 @@
     "deutsch",
     "enummember",
     "hilltwice",
+    "tamasfe",
     "vitest",
     "vsix",
     "русский",

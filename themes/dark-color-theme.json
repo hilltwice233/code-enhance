@@ -41,9 +41,12 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "method": {"fontStyle": "italic"},
+    "memberOperatorOverload": {"foreground": "#646769", "fontStyle": ""},
     "comment.documentation": {"foreground": "#548759"},
     "parameter.label": {"foreground": "#628a91", "fontStyle": "italic"},
+    "decorator": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
+    "class.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.annotation": {"foreground": "#6fcad8", "fontStyle": "italic"},
     "property.static": {"foreground": "#bd93d5", "fontStyle": ""},
     "enumMember": {"foreground": "#bd93d5", "fontStyle": "italic"},
@@ -87,7 +90,8 @@
         "meta.brace",
         "punctuation",
         "storage.modifier.array.bracket.square",
-        "source.dart"
+        "source.dart",
+        "meta.body.function.definition"
       ],
       "settings": {
         "foreground": "#5c6063",
@@ -168,6 +172,7 @@
         "foreground": "#fbd640"
       }
     },
+
     {
       "scope": ["markup.bold"],
       "settings": {
@@ -239,6 +244,13 @@
       }
     },
     {
+      "scope": ["support.type.property-name.table.toml"],
+      "settings": {
+        "foreground": "#34ade6",
+        "fontStyle": ""
+      }
+    },
+    {
       "scope": [
         "constant.numeric",
         "punctuation.definition.list.begin.markdown"
@@ -257,7 +269,11 @@
       }
     },
     {
-      "scope": ["variable.other.enummember"],
+      "scope": [
+        "variable.other.enummember",
+        "constant.other.placeholder",
+        "constant.other.option"
+      ],
       "settings": {
         "foreground": "#bd93d5",
         "fontStyle": ""
