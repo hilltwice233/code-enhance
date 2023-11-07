@@ -12,7 +12,10 @@ export function enableGitLineBlame(context: vscode.ExtensionContext) {
 
 function renderGitBlame(editor: vscode.TextEditor) {
   const line = editor.document.lineAt(editor.selection.active.line)
-  if (line.lineNumber >= editor.document.lineCount) return
+  if (line.lineNumber >= editor.document.lineCount - 1) {
+    decoration.clear(editor)
+    return
+  }
 
   const path = editor.document.uri
   const args = ["blame", "-p", path.path, `-L${line.lineNumber + 1},+1`]
@@ -33,8 +36,6 @@ function renderGitBlameData(
   line: vscode.TextLine,
   data: any,
 ) {
-  console.log("it works")
-
   const blame = new GitLineBlame(data.toString())
   const message = blame.formatLine()
   const range = new vscode.Range(
@@ -43,20 +44,46 @@ function renderGitBlameData(
     line.lineNumber,
     line.text.length + message.length,
   )
-  const decoration: vscode.DecorationOptions = {
+  decoration.updateOptions(editor, {
     range,
     hoverMessage: blame.formatHover(),
     renderOptions: {after: {contentText: message}},
-  }
-  editor.setDecorations(blameDecoration, [decoration])
+  })
 }
 
-let blameDecoration = vscode.window.createTextEditorDecorationType({
-  after: {
-    textDecoration: "none; opacity: 25%",
-    margin: "0 0 0 1rem",
-  },
-})
+namespace decoration {
+  let currentType = vscode.window.createTextEditorDecorationType({
+    after: {
+      textDecoration: "none; opacity: 25%",
+      margin: "0 0 0 1rem",
+    },
+  })
+
+  let currentOptions: vscode.DecorationOptions[] = []
+
+  export function clear(editor: vscode.TextEditor) {
+    currentOptions = []
+    editor.setDecorations(currentType, currentOptions)
+  }
+
+  export function updateType(
+    editor: vscode.TextEditor,
+    type: vscode.TextEditorDecorationType,
+  ) {
+    clear(editor)
+    currentType = type
+    editor.setDecorations(type, currentOptions)
+  }
+
+  export function updateOptions(
+    editor: vscode.TextEditor,
+    option: vscode.DecorationOptions,
+  ) {
+    clear(editor)
+    currentOptions = [option]
+    editor.setDecorations(currentType, currentOptions)
+  }
+}
 
 class GitLineBlame {
   readonly committed: boolean
