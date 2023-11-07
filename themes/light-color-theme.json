@@ -59,7 +59,12 @@
     "method": {"fontStyle": "italic"},
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
     "class.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
-    "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"}
+    "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
+    "property.readonly": {"foreground": "#af85cf", "fontStyle": ""},
+    "property.declaration.readonly": {
+      "foreground": "#af85cf",
+      "fontStyle": ""
+    }
   },
   "tokenColors": [
     {
