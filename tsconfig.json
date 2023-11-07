@@ -3,7 +3,11 @@
     "target": "ESNext",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "types": ["vitest/importMeta"]
+    "types": ["vitest/importMeta"],
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true
   },
   "include": ["source/**/*.ts", "scripts/**/*.ts"]
 }

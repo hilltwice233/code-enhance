@@ -19,7 +19,7 @@ function renderGitBlame(editor: vscode.TextEditor) {
 
   const path = editor.document.uri
   const args = ["blame", "-p", path.path, `-L${line.lineNumber + 1},+1`]
-  const cwd = vscode.workspace.getWorkspaceFolder(path).uri.fsPath
+  const cwd = vscode.workspace.getWorkspaceFolder(path)?.uri.fsPath
   const stream = spawn("git", args, {cwd})
   stream.stdout.on("data", (data) => renderGitBlameData(editor, line, data))
 }
