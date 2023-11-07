@@ -58,7 +58,18 @@
     "comment.documentation": {"foreground": "#83a45c"},
     "method": {"fontStyle": "italic"},
     "annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
-    "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"}
+    "class.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
+    "property.annotation": {"foreground": "#af85cf", "fontStyle": "italic"},
+    "variable.readonly": {"foreground": "#855ca5", "fontStyle": ""},
+    "variable.declaration.readonly": {
+      "foreground": "#855ca5",
+      "fontStyle": ""
+    },
+    "property.readonly": {"foreground": "#855ca5", "fontStyle": ""},
+    "property.declaration.readonly": {
+      "foreground": "#855ca5",
+      "fontStyle": ""
+    }
   },
   "tokenColors": [
     {
