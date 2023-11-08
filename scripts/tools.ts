@@ -7,7 +7,7 @@ import {
 } from "node:fs"
 import {join} from "node:path"
 
-const activationEvents: string[] = ["workspaceContains:.git"]
+const activationEvents: string[] = ["workspaceContains:*"]
 
 /**
  * Process the manifest file of node package (the `package.json` file):
