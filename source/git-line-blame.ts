@@ -3,11 +3,11 @@ import * as vscode from "vscode"
 import {format} from "./utils.js"
 
 export function enableGitLineBlame(context: vscode.ExtensionContext) {
-  context.subscriptions.push(
-    vscode.window.onDidChangeTextEditorSelection((event) => {
-      renderGitBlame(event.textEditor)
-    }),
-  )
+  const disposable = vscode.window.onDidChangeTextEditorSelection((event) => {
+    renderGitBlame(event.textEditor)
+  })
+
+  context.subscriptions.push(disposable)
 }
 
 function renderGitBlame(editor: vscode.TextEditor) {
