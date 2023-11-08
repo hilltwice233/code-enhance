@@ -7,6 +7,7 @@ import {
 } from "node:fs"
 import {join} from "node:path"
 
+/** Avoid * because it will cause warning when packaging vsix. */
 const activationEvents: string[] = ["workspaceContains:*"]
 
 /**
